@@ -1,0 +1,40 @@
+Project 1 - Modern Office Building
+Main Shot (project1.jpg):
+/imagine exterior photograph of a modern glass and steel office building shot on a large format camera, featuring a sleek minimalist facade with floor-to-ceiling windows, dramatic angular geometry, and cantilevered upper floors. The building has a grand entrance plaza with reflecting pools. Captured during golden hour with soft directional lighting casting long shadows, set against a clear blue sky with wispy clouds. Photorealistic architectural photography, ultra detailed --ar 16:9 --v 5
+
+Detail Shots:
+1. Exterior Angle (project1-1.jpg):
+/imagine dramatic low-angle architectural photograph of a modern office building facade shot on Hasselblad H6D, showcasing the intersection of glass curtain walls and exposed steel structure. Dynamic composition emphasizing geometric patterns and reflections, captured during late afternoon with warm sunlight creating contrast. Professional architectural photography, photorealistic --ar 4:3 --v 5
+
+2. Interior Lobby (project1-2.jpg):
+/imagine interior photograph of a modern corporate lobby shot on Canon R5, featuring a double-height space with floating staircase, marble floors, and wood accent walls. Natural light streams through floor-to-ceiling windows, creating dramatic shadows. Includes elegant reception desk and subtle wayfinding elements. Architectural interior photography, photorealistic --ar 3:2 --v 5
+
+3. Conference Room (project1-3.jpg):
+/imagine interior photograph of an executive conference room shot on Sony A7R, featuring a minimalist design with glass walls, custom lighting, and a sculptural conference table. City skyline visible through windows, captured during blue hour. Contemporary corporate interior, photorealistic --ar 3:2 --v 5
+
+4. Workspace (project1-4.jpg):
+/imagine interior photograph of an open-plan office workspace shot on Nikon D850, showing a modern collaborative environment with ergonomic furniture, breakout areas, and biophilic design elements. Natural light from floor-to-ceiling windows, exposed ceiling with modern lighting. Contemporary office interior, photorealistic --ar 16:9 --v 5
+
+Project 2 - Luxury Residential Home (project2.jpg):
+/imagine exterior photograph of a contemporary luxury residence shot on Phase One camera, featuring clean lines, natural materials including stone and wood cladding, expansive glass walls, and infinity pool. Captured during sunset with warm lighting, landscaped garden in foreground. Modern residential architecture, California modernism, photorealistic --ar 16:9 --v 5
+
+Project 3 - Retail Shopping Center (project3.jpg):
+/imagine exterior photograph of a modern retail complex shot on Canon R3, featuring a dynamic facade with varied textures, pedestrian-friendly plaza, and creative lighting design. Multiple storefronts with clean signage, captured during blue hour with ambient lighting. Contemporary commercial architecture, photorealistic --ar 16:9 --v 5
+
+Project 4 - Historic Building Renovation (project4.jpg):
+/imagine architectural photograph of a restored historic building shot on Leica M11, showcasing preserved classical facade with modern interventions. Original ornate details cleaned and restored, new glazing and lighting integrated sensitively. Captured during morning golden hour. Heritage architecture photography, photorealistic --ar 4:3 --v 5
+
+Project 5 - Multi-family Apartment Complex (project5.jpg):
+/imagine exterior photograph of a contemporary apartment complex shot on Sony A1, featuring modular facade design, private balconies, rooftop gardens, and communal courtyards. Mixed materials including brick, metal panels, and glass. Captured during daytime with dramatic clouds. Modern residential architecture, photorealistic --ar 16:9 --v 5
+
+Project 6 - Restaurant Renovation (project6.jpg):
+/imagine exterior photograph of a renovated restaurant building shot on Fujifilm GFX, featuring industrial-modern design with exposed brick, steel elements, and large windows. Outdoor dining area with custom lighting, captured during dusk with warm ambient lighting. Hospitality architecture, photorealistic --ar 3:2 --v 5
+
+Project 7 - Community Center (project7.jpg):
+/imagine exterior photograph of a modern community center shot on Canon R5, featuring welcoming design with natural materials, large gathering spaces, and indoor-outdoor connection. Sustainable features visible including green roof and solar panels. Captured during day with people using the space. Public architecture, photorealistic --ar 16:9 --v 5
+
+Project 8 - Corporate Headquarters (project8.jpg):
+/imagine exterior photograph of an impressive corporate headquarters shot on Phase One camera, featuring bold contemporary architecture with sculptural forms, innovative facade system, and landscaped approach. Captured during dramatic weather with moody sky. Corporate architecture, photorealistic --ar 16:9 --v 5
+
+Project 9 - School Building (project9.jpg):
+/imagine exterior photograph of a modern school building shot on Nikon Z9, featuring playful yet sophisticated design with colorful accents, outdoor learning spaces, and sustainable features. Welcoming entrance plaza with student artwork, captured during bright morning light. Educational architecture, photorealistic --ar 16:9 --v 5 

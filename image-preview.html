@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Preview - CDS Contractors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+      color: #1e56a0;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #242b40;
+      border-bottom: 3px solid #f7b32b;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .images-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .image-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .image-card:hover {
+      transform: translateY(-5px);
+    }
+    .image-container {
+      height: 200px;
+      overflow: hidden;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+    .image-info {
+      padding: 15px;
+    }
+    .image-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #1e56a0;
+    }
+    .image-desc {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+    .missing {
+      border: 2px dashed #d72323;
+    }
+    .missing .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #d72323;
+      text-align: center;
+      padding: 20px;
+    }
+    .instruction-box {
+      background: #e9f7fe;
+      border-left: 4px solid #1e56a0;
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #1e56a0;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #163172;
+    }
+  </style>
+</head>
+<body>
+  <h1>CDS Contractors - Image Preview</h1>
+  
+  <div class="instruction-box">
+    <h3>Image Generation Status</h3>
+    <p>This page shows all images needed for the website and whether they've been generated or not. Follow the instructions in <code>image-generation-readme.md</code> to generate the missing images.</p>
+    <a href="index.html" class="btn">Go to Website</a>
+  </div>
+  
+  <div class="section">
+    <h2>Logo & Identity</h2>
+    <div class="images-grid">
+      <div class="image-card" id="logo-card">
+        <div class="image-container">
+          <img src="images/logo.png" alt="Logo" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python generate_logo.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">logo.png</div>
+          <p class="image-desc">Company logo with blue and orange colors</p>
+        </div>
+      </div>
+      
+      <div class="image-card" id="logo-white-card">
+        <div class="image-container" style="background: #333;">
+          <img src="images/logo-white.png" alt="White Logo" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python generate_logo.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">logo-white.png</div>
+          <p class="image-desc">White logo for dark backgrounds</p>
+        </div>
+      </div>
+      
+      <div class="image-card" id="favicon-card">
+        <div class="image-container">
+          <img src="images/favicon.ico" alt="Favicon" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python generate_logo.py';" style="width: 32px; height: 32px;">
+        </div>
+        <div class="image-info">
+          <div class="image-name">favicon.ico</div>
+          <p class="image-desc">Website favicon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Banner Images</h2>
+    <div class="images-grid">
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/hero-bg.jpg" alt="Hero Background" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">hero-bg.jpg</div>
+          <p class="image-desc">Hero section background</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/services-banner.jpg" alt="Services Banner" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">services-banner.jpg</div>
+          <p class="image-desc">Services page banner</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/projects-banner.jpg" alt="Projects Banner" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">projects-banner.jpg</div>
+          <p class="image-desc">Projects page banner</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/cta-bg.jpg" alt="CTA Background" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">cta-bg.jpg</div>
+          <p class="image-desc">Call-to-action background</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/counter-bg.jpg" alt="Counter Background" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">counter-bg.jpg</div>
+          <p class="image-desc">Counter section background</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/about-img.jpg" alt="About Image" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">about-img.jpg</div>
+          <p class="image-desc">About section image</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Service Images</h2>
+    <div class="images-grid">
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/service-commercial.jpg" alt="Commercial Service" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">service-commercial.jpg</div>
+          <p class="image-desc">Commercial construction service</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/service-residential.jpg" alt="Residential Service" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">service-residential.jpg</div>
+          <p class="image-desc">Residential construction service</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/service-renovation.jpg" alt="Renovation Service" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">service-renovation.jpg</div>
+          <p class="image-desc">Renovation service</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/service-project-management.jpg" alt="Project Management Service" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">service-project-management.jpg</div>
+          <p class="image-desc">Project management service</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/service-design.jpg" alt="Design Service" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">service-design.jpg</div>
+          <p class="image-desc">Design-build service</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/service-consultation.jpg" alt="Consultation Service" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">service-consultation.jpg</div>
+          <p class="image-desc">Consultation service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Detailed Service Images</h2>
+    <div class="images-grid">
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/commercial-construction.jpg" alt="Commercial Construction" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">commercial-construction.jpg</div>
+          <p class="image-desc">Commercial construction detail</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/residential-construction.jpg" alt="Residential Construction" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">residential-construction.jpg</div>
+          <p class="image-desc">Residential construction detail</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/renovations.jpg" alt="Renovations" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">renovations.jpg</div>
+          <p class="image-desc">Renovations detail</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/project-management.jpg" alt="Project Management" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">project-management.jpg</div>
+          <p class="image-desc">Project management detail</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/design-build.jpg" alt="Design-Build" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">design-build.jpg</div>
+          <p class="image-desc">Design-build detail</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/consultation.jpg" alt="Consultation" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">consultation.jpg</div>
+          <p class="image-desc">Consultation detail</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Project Images</h2>
+    <div class="images-grid">
+      <!-- Projects 1-9 -->
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/project1.jpg" alt="Project 1" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">project1.jpg</div>
+          <p class="image-desc">Modern office building exterior</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/project2.jpg" alt="Project 2" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">project2.jpg</div>
+          <p class="image-desc">Luxury residential home</p>
+        </div>
+      </div>
+      
+      <div class="image-card">
+        <div class="image-container">
+          <img src="images/project3.jpg" alt="Project 3" onerror="this.parentElement.parentElement.classList.add('missing'); this.parentElement.innerHTML = 'Missing Image<br>Run: python download-images.py';">
+        </div>
+        <div class="image-info">
+          <div class="image-name">project3.jpg</div>
+          <p class="image-desc">Retail shopping center</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Check if images directory exists and show appropriate messages
+    function checkImagesStatus() {
+      // This is a simple frontend check and will always show missing
+      // The real check happens with the onerror attributes on the img tags
+    }
+    
+    document.addEventListener('DOMContentLoaded', checkImagesStatus);
+  </script>
+</body>
+</html> 
