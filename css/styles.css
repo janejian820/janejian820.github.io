@@ -536,7 +536,7 @@ ul {
   display: block;
   overflow: visible;
   /* Limit height with fade out effect */
-  max-height: 4.2em; /* 3 lines of text */
+  max-height: 5.6em; /* 3 lines of text */
   position: relative;
 }
 
