@@ -528,8 +528,8 @@ ul {
 }
 
 .service-content p {
-  font-size: 0.9rem;
-  color: var(--gray);
+  font-size: 1rem;
+  color: var(--dark);
   margin-bottom: var(--spacing-sm);
   line-height: 1.4;
   /* Remove text truncation */
