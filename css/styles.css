@@ -524,7 +524,7 @@ ul {
   font-size: 1.25rem; /* Smaller title */
   margin-bottom: var(--spacing-xs);
   color: var(--dark);
-  line-height: 1.0;
+  line-height: 1.3;
 }
 
 .service-content p {
